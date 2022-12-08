@@ -1,4 +1,4 @@
 # Git на кончиках пальцев
 ### Otus 2022 11
 
-We are QA! 2021
+Создано в рамках курса OTUS JavaScript QA Engineer
