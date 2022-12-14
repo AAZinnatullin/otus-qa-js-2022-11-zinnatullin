@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "otus",
+  "description": "Создано в рамках курса OTUS JavaScript QA Engineer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./testFunction.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AAZinnatullin/otus-qa-js-2022-11-zinnatullin.git"
+  },
+  "author": "Artyom Zinnatullin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AAZinnatullin/otus-qa-js-2022-11-zinnatullin/issues"
+  },
+  "homepage": "https://github.com/AAZinnatullin/otus-qa-js-2022-11-zinnatullin#readme"
+}
