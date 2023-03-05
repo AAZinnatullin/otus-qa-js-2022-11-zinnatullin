@@ -1,11 +1,11 @@
 {
-  "type": "module",
   "name": "otus",
   "description": "Создано в рамках курса OTUS JavaScript QA Engineer",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "node ./testFunction.js"
+    "test jest": "node ./testFunction.js",
+    "test": "npx playwright test",
+    "debug": "npx playwright test --debug"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/AAZinnatullin/otus-qa-js-2022-11-zinnatullin/issues"
   },
-  "homepage": "https://github.com/AAZinnatullin/otus-qa-js-2022-11-zinnatullin#readme"
+  "homepage": "https://github.com/AAZinnatullin/otus-qa-js-2022-11-zinnatullin#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.31.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
 }
