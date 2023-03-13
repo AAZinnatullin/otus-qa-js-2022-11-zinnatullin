@@ -1,6 +1,6 @@
 // @ts-check
 const { test } = require('@playwright/test');
-const { pageData, locators } = require('../controllers/commonData');
+const { pageData, locators } = require('../fixtures/commonData');
 
 test.use({ extraHTTPHeaders: {
     Authorization: 'Basic dXNlcjpwYXNz'
