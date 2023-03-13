@@ -1,6 +1,6 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const { pageData, locators, userNames } = require('../fixtures/commonData');
+const { pageData, locators, userNames } = require('../controllers/commonData');
 const formName = 'simpleForm';
 
 

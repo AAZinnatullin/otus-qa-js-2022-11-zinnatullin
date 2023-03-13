@@ -1,6 +1,6 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const { pageData, locators} = require('../fixtures/commonData');
+const { pageData, locators} = require('../controllers/commonData');
 const { totpToken } = require('../api/getToken');
 const formName = 'totpChallenge';
 
