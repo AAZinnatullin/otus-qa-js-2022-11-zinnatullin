@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-const { pageData, locators} = require('../fixtures/commonData');
 const { totpToken } = require('../api/getToken');
+const { locators, pageURLs, isLogin } = require('../pageElements/loginPage');
 const formName = 'totpChallenge';
 
 test('open TOTP form from UI', async ({ page }) => {
@@ -20,8 +20,8 @@ test('auth via TOTP form', async ({ page }) => {
     await page.getByLabel('Password').fill(process.env.PASSWORD);
     await page.getByLabel('Enter your MFA Code:').fill(code.code);
 
-    await locators.login.clickLogin(page);
+    await page.locator(locators.logIn).click();
 
-    await pageData.isLogin(page, locators.login.successUrl, locators.login.successText);
-    await expect(page.locator(locators.login.signOut)).toBeVisible();
+    await isLogin(page, pageURLs.successUrl, locators.successText);
+    await expect(page.locator(locators.signOut)).toBeVisible();
 });
