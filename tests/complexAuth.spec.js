@@ -22,3 +22,4 @@ test('success auth via Complex Form', async ({ page }) => {
    await pageData.isLogin(page, locators.login.successUrl, locators.login.successText);
    await expect(page.locator(locators.login.signOut)).toBeVisible();
 });
+
